@@ -8,7 +8,7 @@ export type ReactOauth2Options = {
     queryOrHash: "query" | "hash"
 }
 
-export function useOath2Login(options: ReactOauth2Options) {
+export function useOauth2Login(options: ReactOauth2Options) {
     const signUp = React.useCallback(async () => {
         try {
             const data = await PopupWindow.open(options.id, `${options.url}?${options.query}`, {
