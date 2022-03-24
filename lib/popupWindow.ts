@@ -7,6 +7,7 @@ class PopupWindow {
     interval?: number
 
     window?: Window | null
+
     promise?: Promise<any>
 
     constructor(id: string, url: string, options = {}) {
